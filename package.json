@@ -1,0 +1,30 @@
+{
+  "name": "ts-homework",
+  "version": "1.0.0",
+  "description": "TypeScript homework and practice projects",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kosta45/ts-homework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kosta45/ts-homework/issues"
+  },
+  "homepage": "https://github.com/Kosta45/ts-homework#readme",
+  "devDependencies": {
+    "eslint": "^10.12.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "uuid": "^14.0.2"
+  }
+}
