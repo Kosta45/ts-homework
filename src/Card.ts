@@ -1,7 +1,8 @@
 import { Transaction } from "./Transaction.js";
 import { CurrencyEnum } from "./CurrencyEnum.js";
+import type { ICard } from "./interfaces/ICard.js";
 
-export class Card {
+export class Card implements ICard {
   transactions: Transaction[] = [];
 
   addTransaction(transaction: Transaction): string;
@@ -27,7 +28,7 @@ export class Card {
     );
   }
 
-  getBalance(currency: CurrencyEnum) {
+  getBalance(currency: CurrencyEnum): number {
     return this.transactions.reduce((sum, transaction) => {
       if (transaction.currency === currency) {
         sum = sum + transaction.amount;
